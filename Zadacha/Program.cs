@@ -16,3 +16,12 @@ void FillArray(string[] array, string[] newArray)
         }
     }
 }
+void PrintArray(string[] array)
+{
+    string result = String.Empty;
+    for (int i = 0; i < array.Length; i++)
+    {
+        result = result + array[i];               
+    }
+    Console.WriteLine($"Массив из элементов длиной <= 3: {result}");
+}
