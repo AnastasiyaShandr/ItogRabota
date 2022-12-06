@@ -3,3 +3,16 @@
 string text = "hello, 2, world, :)";
 string[] array = text.Split(" ");
 string[] newArray = new string[array.Length];
+
+void FillArray(string[] array, string[] newArray)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            newArray[count] = array[i];
+            count++;
+        }
+    }
+}
