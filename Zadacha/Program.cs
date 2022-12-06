@@ -25,3 +25,6 @@ void PrintArray(string[] array)
     }
     Console.WriteLine($"Массив из элементов длиной <= 3: {result}");
 }
+Console.WriteLine($"Исходный массив: {String.Join(" ", array)}");
+FillArray(array, newArray);
+PrintArray(newArray);
